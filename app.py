@@ -1,9 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
+
 
 app = Flask(__name__)
 
 books = []
 next_id = 1
+
+@app.route("/")
+def homepage():
+    return render_template("index.html")
 
 # GET /api/books
 @app.route("/api/books", methods=["GET"])

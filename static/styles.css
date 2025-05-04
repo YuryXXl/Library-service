@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #222;
+  }
+  
+  code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  pre {
+    background: #f0f0f0;
+    padding: 10px;
+    border-left: 4px solid #888;
+    overflow-x: auto;
+    font-size: 0.95rem;
+  }
+  
+  ul {
+    line-height: 1.6;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
