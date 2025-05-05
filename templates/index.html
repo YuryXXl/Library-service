@@ -1,67 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Library API Documentation</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <title>Library API</title>
 </head>
 <body>
-  <h1>📚 Library API</h1>
-  <p>This API allows users to manage a list of books in a virtual library.</p>
-
-  <h2>📌 Endpoints</h2>
-
-  <h3>GET /api/books</h3>
-  <p>Returns a list of all books.</p>
-  <p><strong>Response Example:</strong></p>
-  <pre>[{ "book_id": 1, "title": "Clean Code", "author": "Robert C. Martin" }]</pre>
-
-  <h3>GET /api/books/&lt;book_id&gt;</h3>
-  <p>Returns a specific book by ID.</p>
-  <p><strong>Error:</strong> <code>404 Book not found</code></p>
-
-  <h3>POST /api/books</h3>
-  <p>Add a new book. <strong>Required:</strong> <code>title</code>, <code>author</code></p>
-  <p><strong>Body Example:</strong></p>
-  <pre>{
-  "title": "Clean Code",
-  "author": "Robert C. Martin",
-  "year": 2008,
-  "genre": "Programming",
-  "status": "to read",
-  "rating": 5,
-  "notes": "Must-read for devs"
-}</pre>
-
-  <h3>PUT /api/books/&lt;book_id&gt;</h3>
-  <p>Update an existing book. Fields are optional.</p>
-  <p><strong>Error:</strong> <code>404 Book not found</code></p>
-
-  <h3>DELETE /api/books/&lt;book_id&gt;</h3>
-  <p>Deletes a book by ID.</p>
-  <p><strong>Error:</strong> <code>404 Book not found</code></p>
-
-  <h3>GET /api/books/stats</h3>
-  <p>Returns total count, genre breakdown, status distribution, and average rating.</p>
-
-  <h2>📋 Field Reference</h2>
-  <ul>
-    <li><code>title</code> (string, required)</li>
-    <li><code>author</code> (string, required)</li>
-    <li><code>year</code> (integer, optional)</li>
-    <li><code>genre</code> (string, optional)</li>
-    <li><code>status</code> (string: "read", "reading", "to read")</li>
-    <li><code>rating</code> (integer, 0-5)</li>
-    <li><code>notes</code> (string, optional)</li>
-  </ul>
-
-  <h2>⚠️ Error Codes</h2>
-  <ul>
-    <li><code>400</code> - Missing required data</li>
-    <li><code>404</code> - Book not found</li>
-  </ul>
-
+    <h1>Welcome to the Library API</h1>
 </body>
 </html>
